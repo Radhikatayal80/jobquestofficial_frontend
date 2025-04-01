@@ -38,7 +38,7 @@ const Login = () => {
             });
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
-                localstorage.setItem("token",res.data.token);
+                // localstorage.setItem("token",res.data.token);
                 navigate("/");
                 toast.success(res.data.message);
             }
